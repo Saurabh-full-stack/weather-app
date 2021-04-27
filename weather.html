@@ -1,0 +1,69 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="app-wrap">
+
+
+          <header>
+            <input type="text" style="color: white;"  autocomplete="on" class="search-box" placeholder="Search for a city..." >
+              <button class="icon"> <i class="fa fa-search fa-2x"></i>
+      </button>
+                  </header>
+
+
+
+
+				<main>
+								<section class="location">
+											<div class="for-flex">
+                        <div class="city">Haldwani
+                        </div>
+                        &nbsp&nbsp&nbsp
+                        <div class="city1">IN
+                        </div>
+
+                      </div>
+                      <div class="date">
+                        <script>
+                        var d= new Date();
+                        var date= d.getDate();
+                        var month= d.getMonth();
+                        var year=d.getFullYear();
+                        var day= d.getDay();
+
+                        let months=[
+                          "January","February", "March","April","May", "June",
+                          "July","August", "September", "October","November","December"];
+                          let days=["Sunday", "Monday","Tuesday","Wednesdsay","Thursday","Friday",
+                        "Saturday"];
+
+                        var datestr= days[day]+ "," + date + " "+months[month]+" "+year;
+                        document.write(datestr);
+
+                        </script>
+
+                      </div>
+
+												</section>
+												<div class="current">
+												<div class="temp-flex">
+                          <div class="temp">15
+                          </div>
+                          <div class="temp1">°c
+                          </div>
+
+                        </div>
+									<div class="weather">Sunny</div>
+									<div class="hi-low">13°c / 16°c</div>
+									</div>
+							</main>
+					</div>
+            <script src="weather2.js"></script>
+  </body>
+</html>
